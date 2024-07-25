@@ -1,0 +1,130 @@
+openapi: 3.0.3
+info:
+  title: Department Service API
+  description: API for managing departments
+  version: 1.0.0
+paths:
+  /departments:
+    post:
+      summary: Create a new department
+      requestBody:
+        description: Department creation request
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CreateDepartmentRequest'
+      responses:
+        '200':
+          description: Department created successfully
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CreateDepartmentResponse'
+    get:
+      summary: Get a department by ID
+      parameters:
+        - in: query
+          name: id
+          schema:
+            type: integer
+          required: true
+          description: Department ID
+      responses:
+        '200':
+          description: Department retrieved successfully
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/GetDepartmentResponse'
+  /departments/{id}:
+    put:
+      summary: Update a department
+      parameters:
+        - in: path
+          name: id
+          schema:
+            type: integer
+          required: true
+          description: Department ID
+      requestBody:
+        description: Department update request
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/UpdateDepartmentRequest'
+      responses:
+        '200':
+          description: Department updated successfully
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/UpdateDepartmentResponse'
+    delete:
+      summary: Delete a department
+      parameters:
+        - in: path
+          name: id
+          schema:
+            type: integer
+          required: true
+          description: Department ID
+      responses:
+        '200':
+          description: Department deleted successfully
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DeleteDepartmentResponse'
+components:
+  schemas:
+    Department:
+      type: object
+      properties:
+        id:
+          type: integer
+        name:
+          type: string
+    CreateDepartmentRequest:
+      type: object
+      properties:
+        name:
+          type: string
+    CreateDepartmentResponse:
+      type: object
+      properties:
+        department:
+          $ref: '#/components/schemas/Department'
+    GetDepartmentRequest:
+      type: object
+      properties:
+        id:
+          type: integer
+    GetDepartmentResponse:
+      type: object
+      properties:
+        department:
+          $ref: '#/components/schemas/Department'
+    UpdateDepartmentRequest:
+      type: object
+      properties:
+        id:
+          type: integer
+        name:
+          type: string
+    UpdateDepartmentResponse:
+      type: object
+      properties:
+        department:
+          $ref: '#/components/schemas/Department'
+    DeleteDepartmentRequest:
+      type: object
+      properties:
+        id:
+          type: integer
+    DeleteDepartmentResponse:
+      type: object
+      properties:
+        success:
+          type: boolean
