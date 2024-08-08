@@ -1,25 +1,31 @@
-<!-- In logback-spring.xml -->
 <configuration>
 
-    <!-- Appender per scrivere su file -->
-    <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
-        <file>C:\Users\m.mancini\Desktop\projectService\src\main\java\com\micro\projectService\log\application.log</file>
-        <rollingPolicy class="ch.qos.logback.core.rolling.FixedWindowRollingPolicy">
-            <fileNamePattern>C:\Users\m.mancini\Desktop\projectService\src\main\java\com\micro\projectService\log\application.%i.log</fileNamePattern>
-            <minIndex>1</minIndex>
-            <maxIndex>3</maxIndex>
+    <!-- Appender per i log su file -->
+    <appender name="ROLLING" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>logs/app.log</file>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>logs/app.%d{yyyy-MM-dd}.%i.log</fileNamePattern>
+            <timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+                <maxFileSize>10MB</maxFileSize>
+            </timeBasedFileNamingAndTriggeringPolicy>
+            <maxHistory>30</maxHistory>
         </rollingPolicy>
-        <triggeringPolicy class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy">
-            <maxFileSize>10MB</maxFileSize>
-        </triggeringPolicy>
         <encoder>
-            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss} - %msg%n</pattern>
         </encoder>
     </appender>
 
-    <!-- Root logger -->
-    <root level="INFO">
-        <appender-ref ref="FILE" />
+    <!-- Appender per i log sulla console -->
+    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <!-- Configurazione del logger root -->
+    <root level="info">
+        <appender-ref ref="ROLLING" />
+        <appender-ref ref="CONSOLE" />
     </root>
 
 </configuration>

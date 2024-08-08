@@ -1,0 +1,55 @@
+2024-08-08 17:15:54 - Starting ProjectServiceApplication using Java 18.0.2.1 with PID 6196 (C:\Users\m.mancini\Desktop\projectService\target\classes started by m.mancini in C:\Users\m.mancini\Desktop\projectService)
+2024-08-08 17:15:54 - No active profile set, falling back to 1 default profile: "default"
+2024-08-08 17:15:55 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-08-08 17:15:55 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-08-08 17:15:57 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-08 17:15:57 - Finished Spring Data repository scanning in 135 ms. Found 1 JPA repository interface.
+2024-08-08 17:15:58 - Tomcat initialized with port 8080 (http)
+2024-08-08 17:15:58 - Initializing ProtocolHandler ["http-nio-8080"]
+2024-08-08 17:15:58 - Starting service [Tomcat]
+2024-08-08 17:15:58 - Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-08-08 17:15:59 - Initializing Spring embedded WebApplicationContext
+2024-08-08 17:15:59 - Root WebApplicationContext: initialization completed in 3945 ms
+2024-08-08 17:16:00 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-08 17:16:00 - HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-08 17:16:00 - HHH000026: Second-level cache disabled
+2024-08-08 17:16:01 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-08 17:16:01 - HikariPool-1 - Starting...
+2024-08-08 17:16:02 - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@544e3ea0
+2024-08-08 17:16:02 - HikariPool-1 - Start completed.
+2024-08-08 17:16:04 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-08 17:16:04 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-08 17:16:05 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-08 17:16:06 - LiveReload server is running on port 35729
+2024-08-08 17:16:06 - Starting ProtocolHandler ["http-nio-8080"]
+2024-08-08 17:16:06 - Tomcat started on port 8080 (http) with context path '/'
+2024-08-08 17:16:06 - Started ProjectServiceApplication in 12.897 seconds (process running for 14.581)
+2024-08-08 17:17:31 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-08 17:17:31 - HikariPool-1 - Shutdown initiated...
+2024-08-08 17:17:32 - HikariPool-1 - Shutdown completed.
+2024-08-08 17:17:38 - Starting ProjectServiceApplication using Java 18.0.2.1 with PID 1040 (C:\Users\m.mancini\Desktop\projectService\target\classes started by m.mancini in C:\Users\m.mancini\Desktop\projectService)
+2024-08-08 17:17:38 - No active profile set, falling back to 1 default profile: "default"
+2024-08-08 17:17:38 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-08-08 17:17:38 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-08-08 17:17:40 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-08 17:17:40 - Finished Spring Data repository scanning in 126 ms. Found 1 JPA repository interface.
+2024-08-08 17:17:42 - Tomcat initialized with port 8080 (http)
+2024-08-08 17:17:42 - Initializing ProtocolHandler ["http-nio-8080"]
+2024-08-08 17:17:42 - Starting service [Tomcat]
+2024-08-08 17:17:42 - Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-08-08 17:17:42 - Initializing Spring embedded WebApplicationContext
+2024-08-08 17:17:42 - Root WebApplicationContext: initialization completed in 3929 ms
+2024-08-08 17:17:43 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-08 17:17:43 - HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-08 17:17:43 - HHH000026: Second-level cache disabled
+2024-08-08 17:17:44 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-08 17:17:44 - HikariPool-1 - Starting...
+2024-08-08 17:17:44 - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@4c7e3e61
+2024-08-08 17:17:44 - HikariPool-1 - Start completed.
+2024-08-08 17:17:46 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-08 17:17:46 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-08 17:17:47 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-08 17:17:49 - LiveReload server is running on port 35729
+2024-08-08 17:17:49 - Starting ProtocolHandler ["http-nio-8080"]
+2024-08-08 17:17:49 - Tomcat started on port 8080 (http) with context path '/'
+2024-08-08 17:17:49 - Started ProjectServiceApplication in 12.485 seconds (process running for 13.817)
